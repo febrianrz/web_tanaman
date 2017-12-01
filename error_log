@@ -1,0 +1,14 @@
+[16-Jun-2016 14:03:21 Asia/Jakarta] PHP Fatal error:  Call to a member function result() on a non-object in /home/bada6632/public_html/application/views/front/v_galeri.php on line 36
+[11-Feb-2017 16:22:13 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/bada6632/public_html/application/models/M_donatur.php on line 102
+[16-Feb-2017 11:50:07 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '{', expecting ',' or ';' in /home/bada6632/public_html/application/views/admin/donatur/v_index.php on line 67
+[16-Feb-2017 11:50:08 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '{', expecting ',' or ';' in /home/bada6632/public_html/application/views/admin/donatur/v_index.php on line 67
+[16-Feb-2017 11:50:08 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '{', expecting ',' or ';' in /home/bada6632/public_html/application/views/admin/donatur/v_index.php on line 67
+[16-Feb-2017 11:50:37 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/bada6632/public_html/application/views/admin/donatur/v_index.php on line 68
+[16-Feb-2017 11:50:38 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/bada6632/public_html/application/views/admin/donatur/v_index.php on line 68
+[16-Feb-2017 11:51:18 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/bada6632/public_html/application/views/admin/donatur/v_index.php on line 68
+[16-Feb-2017 11:51:18 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/bada6632/public_html/application/views/admin/donatur/v_index.php on line 68
+[16-Feb-2017 11:51:19 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/bada6632/public_html/application/views/admin/donatur/v_index.php on line 68
+[16-Feb-2017 11:51:19 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/bada6632/public_html/application/views/admin/donatur/v_index.php on line 68
+[16-Feb-2017 11:57:03 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/bada6632/public_html/application/views/admin/donatur/v_index.php on line 68
+[16-Feb-2017 11:57:03 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/bada6632/public_html/application/views/admin/donatur/v_index.php on line 68
+[16-Feb-2017 11:57:03 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/bada6632/public_html/application/views/admin/donatur/v_index.php on line 68

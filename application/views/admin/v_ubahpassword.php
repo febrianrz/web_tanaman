@@ -1,0 +1,63 @@
+<?php $this->load->view('admin/v_header');?>
+<!-- page content -->
+<div class="row">
+	<div class="col-md-12 col-sm-12 col-xs-12">
+		<div class="dashboard_graph">
+			<div class="row x_title">
+				<div class="col-md-6">
+					<h3>Ubah Password</h3>
+				</div>
+				<div class="col-md-6">
+				</div>
+			</div>
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<?php if(isset($msg)):?>
+				<div class="alert alert-<?php echo ($msg['status']?"success":"danger");?>" role="alert">
+					<?php echo $msg['msg'];?>
+				</div>
+				<?php endif;?>
+				<br>
+				<form method="POST" action="" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+					<div class="form-group">
+						<label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Password Lama <span class="required">*</span>
+						</label>
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<input type="password" name="old" id="first-name" required="required" class="form-control col-md-7 col-xs-12" autocomplete="off" autofocus="true">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Password Baru <span class="required">*</span>
+						</label>
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<input type="password" name="new" id="new" required="required" class="form-control col-md-7 col-xs-12" autocomplete="off" autofocus="true">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Ulangi Password Baru <span class="required">*</span>
+						</label>
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<input type="password" name="re" id="re" required="required" class="form-control col-md-7 col-xs-12" autocomplete="off" autofocus="true">
+						</div>
+					</div>
+					<div class="ln_solid"></div>
+					<div class="form-group">
+						<div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+							<a href="<?php echo $this->master->adminUrl($url);?>" class="btn btn-primary">
+								Batal
+							</a>
+							<a href="">
+								<input type="submit" value="Simpan" class="btn btn-success">
+							</a>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<br />
+<!-- footer content -->
+<?php $this->load->view('admin/v_footer');?>
+</body>
+</html>

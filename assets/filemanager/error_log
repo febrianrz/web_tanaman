@@ -1,0 +1,6 @@
+[11-Oct-2016 14:47:25 Europe/Rome] PHP Fatal error:  Uncaught exception 'Exception' with message 'file ../source/galer.php.gif is missing or invalid' in /home/bada6632/public_html/assets/filemanager/include/php_image_magician.php:346
+Stack trace:
+#0 /home/bada6632/public_html/assets/filemanager/include/utils.php(217): imageLib->resizeImage(122, 91, 'crop')
+#1 /home/bada6632/public_html/assets/filemanager/upload.php(111): create_img('../source/galer...', '../thumbs/galer...', 122, 91)
+#2 {main}
+  thrown in /home/bada6632/public_html/assets/filemanager/include/php_image_magician.php on line 346

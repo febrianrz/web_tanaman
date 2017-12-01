@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Halaman Administrator - Java Web Media</title>
+<link href="../images/javawebmedia.png" rel="shortcut icon">
+<link href="../css/style-admin.css" rel="stylesheet" type="text/css">
+<link href="../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+<script src="../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="wrapper">
+
+<header>
+	  <div class="akun"><a href="#" title="Update konfigurasi"><img src="../images/javawebmedia.png" width="16" height="16"> Sistem Informasi Java Web Media</a></div>
+	  <div class="akun"><a href="#" title="Update profil"><img src="../images/img/user_red.png" width="16" height="16"> Andoyo cakep</a></div>
+      <div class="akun"><a href="#" title="Logout disini"><img src="../images/img/delete.png" width="16" height="16"> Logout</a></div>
+	  <div class="home"><a href="#" title="Beranda"><img src="../images/img/house_go.png" width="16" height="16"> Beranda</a></div>
+  </header>
+<!--En header-->
+
+<nav>
+    <ul id="MenuBar1" class="MenuBarHorizontal">
+        <li><a href="#">Dashboard</a>        </li>
+                <li><a href="#" class="MenuBarItemSubmenu">Berita ARA</a>
+          <ul>
+            <li><a href="#">Data berita</a></li>
+            <li><a href="#">Tambah berita</a></li>
+          </ul>
+        </li>
+<li><a href="#" class="MenuBarItemSubmenu">User</a>
+        <ul>
+            <li><a href="#">Data User</a></li>
+            <li><a href="#">Tambah User</a></li>
+          </ul>
+        </li>
+
+       
+        <li><a href="config.php">Konfigurasi</a></li>
+              </ul>
+  </nav>
+  <script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"../SpryAssets/SpryMenuBarDownHover.gif", imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"});
+</script> 
+<!--End Navigasi-->
+   
+    <div class="konten"></div>
+<!--End Konten-->
+
+<div class="clearfix"></div>
+    <footer>Web Design by Java Web Media - &copy; by Java Web Media </footer>    
+</div>
+</body>
+</html>
+
