@@ -13,6 +13,7 @@
 				<ul class="nav child_menu" style="display: none">
 					<li><a href="<?php echo $this->master->adminUrl('tanaman')?>">Data Tanaman</a>
 					<li><a href="<?php echo $this->master->adminUrl('famili')?>">Famili Tanaman</a>
+						<li><a href="<?php echo $this->master->adminUrl('caripenelitian')?>">Pencarian Penelitian</a>
 				</li>
 			</ul>
 		</li>

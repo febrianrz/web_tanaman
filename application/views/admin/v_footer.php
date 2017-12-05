@@ -20,5 +20,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/nicescroll/jquery.nicescroll.min.js"></script>
 <script src="js/custom.js"></script>
+<script src="sweetalert/dist/sweetalert-dev.js"></script>
+<!-- <script src="sweetalert/dist/sweetalert.min.js"></script> -->
 
 

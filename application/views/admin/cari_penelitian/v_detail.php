@@ -32,7 +32,7 @@
 					</tr>
 					<tr>
 						<th>Famili</th>
-						<td><?= isset($row->nama_famili)?$row->nama_famili:$famili->nama ?></td>
+						<td><?= $famili->nama ?></td>
 					</tr>
 		            <tr>
 						<th>Pemanfaatan</th>
@@ -105,7 +105,7 @@
 				</table>
 				<?php } else { ?>
 					<div class="alert alert-danger">
-  						<strong>Maaf,</strong> data tidak tersedia.
+  						<strong>Maaf,</strong> judul penelitian yang anda masukkan tidak ada.
 					</div>
 				<?php } ?>
 			</div>

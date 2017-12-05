@@ -31,30 +31,32 @@
 		<div class="dashboard_graph">
 			<div class="row x_title">
 				<div class="col-md-6">
-					<h3><?php echo $title;?></h3>
-				</div>
-				<div class="col-md-6">
+					<h3><?php echo $title;?>
+                    </h3>
 				</div>
 			</div>
 			<div class="col-md-12 col-sm-12 col-xs-12">
-<!--				<a href="--><?php //echo $this->master->adminUrl($url.'/tambah');?><!--"><button class="btn btn-default"><i class="fa fa-plus" style="font-size: 1em"></i> Tambah</button></a><br>-->
+        <br>
 				<table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
 					<thead>
-						<tr>
-							<th width="800">Nama Keterangan</th>
-							<th width="50">Edit</th>
-						</tr>
-					</thead>
-					<tbody>
-						<?php foreach ($data->result() as $key): ?>
-						<tr>
-							<td style="font-size:1.3em"><?php echo ucfirst(str_replace('_',' ',$key->nama));?></td>
-							<td style="text-align: center;">
-                                <a href="<?php echo $this->master->adminUrl($url.'/ubah/'.$key->id);?>"><button class="btn btn-primary btn-flat">Edit</button></a>
-
-							</td>
-						</tr>
-						<?php endforeach;?>
+              <tr>
+              <th>Judul Penelitian</th>
+              <th>Nama Tanaman</th>
+              <th>Sumber Website</th>
+              <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <?php foreach ($data->result() as $key): ?>
+                <tr>
+                  <td><?= $key->judul_penelitian ?></td>
+                  <td><?= $key->nama_tanaman ?></td>
+                  <td><?= $key->sumber ?></td>
+                  <td style="text-align: center;">
+                    <a href="<?= base_url('admin/'.$url.'/detail/'.$key->id) ?>"><button class="btn btn-success btn-flat btn-xs">Detail</button></a>
+                  </td>
+                </tr>
+              <?php endforeach ?>
 					</tbody>
 				</table>
 			</div>
@@ -85,19 +87,6 @@
         <!-- pace -->
         <script src="js/pace/pace.min.js"></script>
         <script>
-            function hapus(ids){
-                if(confirm('Apakah Anda Yakin Ingin Menghapusnya ?')){
-                    $.post("<?php echo base_url('admin/buletin/delete');?>",{id:ids},function(data){
-                        if(data.status){
-                            alert(data.msg);
-                            window.location.reload();
-                        } else {
-                            alert(data.msg);
-                        }
-                    },"json");
-                }
-                return false;
-            }
           var handleDataTableButtons = function() {
               "use strict";
               0 !== $("#datatable-buttons").length && $("#datatable-buttons").DataTable({
@@ -136,7 +125,9 @@
             $('#datatable-keytable').DataTable({
               keys: true
             });
-            $('#datatable-responsive').DataTable();
+            $('#datatable-responsive').DataTable({
+							"order": [[ 0, "desc" ]]
+						});
             $('#datatable-scroller').DataTable({
               ajax: "js/datatables/json/scroller-demo.json",
               deferRender: true,
@@ -147,6 +138,11 @@
             var table = $('#datatable-fixed-header').DataTable({
               fixedHeader: true
             });
+
+              $('.input-sm').on('keyup',function(){
+                  var base_url = "<?php echo base_url('admin/donatur/printpdf?like=');?>";
+                  $('#link-print').attr('href',base_url+$(this).val());
+              });
           });
           TableManageButtons.init();
         </script>

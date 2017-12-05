@@ -17,6 +17,7 @@
 		<link rel="stylesheet" type="text/css" href="css/maps/jquery-jvectormap-2.0.3.css" />
 		<link href="css/icheck/flat/green.css" rel="stylesheet" />
 		<link href="css/floatexamples.css" rel="stylesheet" type="text/css" />
+    	<link href="sweetalert/dist/sweetalert.css" rel="stylesheet">
 		<script src="js/jquery.min.js"></script>
 		<script src="js/nprogress.js"></script>
 		<!--[if lt IE 9]>
